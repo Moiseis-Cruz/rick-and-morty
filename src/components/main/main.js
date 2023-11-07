@@ -13,8 +13,13 @@ export const Main = () => {
     const [ character, setCharacter ] = useState({avatar: []})
 
     useEffect(() => {
+        const fetchData = async () => {
+            const data = await getDatos()
 
-    })
+            setCharacter({avatar: data})
+        }
+        fetchData()
+    },[])
 
     return(
         <h1>Teste</h1>
