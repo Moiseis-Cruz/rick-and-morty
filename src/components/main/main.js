@@ -22,6 +22,20 @@ export const Main = () => {
     },[])
 
     return(
-        <h1>Teste</h1>
+        <section>
+            <ul>
+                {
+                    character.avatar.map((item, index) => {
+                        return(
+                            <li key={index}>
+                                <div>
+                                    <img src={item.image} />
+                                </div>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
+        </section>
     )
 }
