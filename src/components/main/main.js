@@ -4,8 +4,6 @@ async function getDatos() {
     return datos.results
 }
 
-console.log(await getDatos());
-
 export const Main = () => {
     return(
         <h1>Teste</h1>
