@@ -30,6 +30,7 @@ export const Main = () => {
                             <li key={index}>
                                 <div>
                                     <img src={item.image} />
+                                    <h2>{item.name}</h2>
                                 </div>
                             </li>
                         )
