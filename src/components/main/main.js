@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import styled from "styled-components";
+import { ThemeContext } from "../../contexts";
 
 async function getDatos() {
     const response = await fetch("https://rickandmortyapi.com/api/character")
@@ -9,6 +11,8 @@ async function getDatos() {
 console.log(await getDatos());
 
 export const Main = () => {
+
+    const { theme } = useContext(ThemeContext)
 
     const [ character, setCharacter ] = useState({avatar: []})
 
@@ -22,7 +26,7 @@ export const Main = () => {
     },[])
 
     return(
-        <section>
+        <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
             <ul>
                 {
                     character.avatar.map((item, index) => {
@@ -37,6 +41,14 @@ export const Main = () => {
                     })
                 }
             </ul>
-        </section>
+        </SectionMain>
     )
 }
+
+const SectionMain = styled.section`
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 30px;
+    margin: auto;
+    background-color: red;
+`
