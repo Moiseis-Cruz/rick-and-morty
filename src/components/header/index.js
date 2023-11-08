@@ -1,10 +1,15 @@
 import styled from "styled-components"
 import { Button } from "../button"
 import ImgLogo from "../imgs/rick-and-morty.png"
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts"
 
 export const Header = () => {
+
+    const { theme } = useContext(ThemeContext)
+
     return(
-        <HeaderRAM>
+        <HeaderRAM style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
             <Logo src={ImgLogo} />
 
             <Button>
