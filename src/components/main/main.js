@@ -8,19 +8,17 @@ async function getDatos() {
     return datos.results
 }
 
-console.log(await getDatos());
-
 export const Main = () => {
 
     const { theme } = useContext(ThemeContext)
 
-    const [ character, setCharacter ] = useState({avatar: []})
+    const [ characters, setCharacters ] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
             const data = await getDatos()
 
-            setCharacter({avatar: data})
+            setCharacters(data)
         }
         fetchData()
     },[])
@@ -29,7 +27,7 @@ export const Main = () => {
         <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
             <ul>
                 {
-                    character.avatar.map((item, index) => {
+                    characters.map((item, index) => {
                         return(
                             <li key={index}>
                                 <div>
