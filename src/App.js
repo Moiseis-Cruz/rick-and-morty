@@ -1,16 +1,14 @@
 import './App.css';
 import { createGlobalStyle } from 'styled-components';
-import { Header } from './components/header';
-import { Main } from './components/main/main';
 import { ThemeProvider } from './contexts';
+import { AppRoutes } from './pages/routes';
 
 function App() {
   return (
     <>
       <GlobalStyles />
       <ThemeProvider>
-        <Header />
-        <Main />
+        <AppRoutes />
       </ThemeProvider>
     </>
   );
