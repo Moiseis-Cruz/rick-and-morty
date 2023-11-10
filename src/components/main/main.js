@@ -33,7 +33,7 @@ export const Main = () => {
                     characters.map((item, index) => {
                         return(
                             <li key={index}>
-                                <Link to={`/card/${item.id}`}>
+                                <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to={`/card/${item.id}`}>
                                     <div>
                                         <img src={item.image} />
                                         <h2>{item.name}</h2>

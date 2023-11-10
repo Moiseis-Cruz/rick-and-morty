@@ -15,6 +15,7 @@ export const Card = () => {
     const { theme } = useContext(ThemeContext)
 
     const [ character, setCharacter ] = useState([])
+    console.log(character);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -29,7 +30,7 @@ export const Card = () => {
         <section style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
             <ul>
                 <li>
-                    <Link to='/'>Votal a tela inicial</Link>
+                    <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'>Votal a tela inicial</Link>
                     <div>
                         <img src={character.image} />
                         <h2>{character.name}</h2>
