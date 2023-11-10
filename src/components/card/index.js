@@ -14,7 +14,7 @@ export const Card = () => {
 
     const { theme } = useContext(ThemeContext)
 
-    const [ character, setCharacter ] = useState([])
+    const [ character, setCharacter ] = useState({})
     console.log(character);
 
     useEffect(() => {
@@ -28,17 +28,13 @@ export const Card = () => {
 
     return(
         <section style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
-            <ul>
-                <li>
                     <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'>Votal a tela inicial</Link>
                     <div>
                         <img src={character.image} />
-                        <h2>{character.name}</h2>
-                        <p>{character.species}</p>
-                        <p>{character.status}</p>
+                        <h1>Name: {character.name}</h1>
+                        <p>Species: {character.species}</p>
+                        <p>Status: {character.status}</p>
                     </div>
-                </li>
-            </ul>
         </section >
     )
 }
