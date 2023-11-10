@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 async function getDatos(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -29,9 +29,12 @@ export const Card = () => {
         <section style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
             <ul>
                 <li>
+                    <Link to='/'>Votal a tela inicial</Link>
                     <div>
                         <img src={character.image} />
                         <h2>{character.name}</h2>
+                        <p>{character.species}</p>
+                        <p>{character.status}</p>
                     </div>
                 </li>
             </ul>
