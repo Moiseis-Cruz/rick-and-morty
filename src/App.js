@@ -24,6 +24,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body {
+    font-family: 'Exo', sans-serif;
+  }
+
   ul {
     list-style: none;
   }
