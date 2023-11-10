@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../../contexts";
+import { Link } from "react-router-dom";
 
 async function getDatos() {
     const response = await fetch("https://rickandmortyapi.com/api/character")
     const datos = await response.json()
     return datos.results
 }
+
+console.log(await getDatos());
 
 export const Main = () => {
 
@@ -30,10 +33,12 @@ export const Main = () => {
                     characters.map((item, index) => {
                         return(
                             <li key={index}>
-                                <div>
-                                    <img src={item.image} />
-                                    <h2>{item.name}</h2>
-                                </div>
+                                <Link to={`/card/${item.id}`}>
+                                    <div>
+                                        <img src={item.image} />
+                                        <h2>{item.name}</h2>
+                                    </div>
+                                </Link>
                             </li>
                         )
                     })
@@ -48,5 +53,4 @@ const SectionMain = styled.section`
     max-width: 1440px;
     padding-top: 30px;
     margin: auto;
-    background-color: red;
 `
