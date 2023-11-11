@@ -9,8 +9,6 @@ async function getDatos() {
     return datos.results
 }
 
-console.log(await getDatos());
-
 export const Main = () => {
 
     const { theme } = useContext(ThemeContext)
