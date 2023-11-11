@@ -34,6 +34,7 @@ export const Card = () => {
                         <h1>Name: {character.name}</h1>
                         <p>Species: {character.species}</p>
                         <p>Status: {character.status}</p>
+                        <p>{character.created}</p>
                     </div>
         </section >
     )
