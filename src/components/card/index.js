@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
+import styled from "styled-components";
 
 async function getDatos(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -8,14 +9,14 @@ async function getDatos(id) {
     return datos
 }
 
-export const Card = () => {
+export const Character = () => {
 
     const { id } = useParams()
 
     const { theme } = useContext(ThemeContext)
 
-    const [ character, setCharacter ] = useState({})
-    console.log(character);
+    const [ character, setCharacter ] = useState()
+    // console.log(character);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -27,15 +28,26 @@ export const Card = () => {
     },[])
 
     return(
-        <section style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
+        <SectionCard>
+            <section style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
                     <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'>Votal a tela inicial</Link>
-                    <div>
+                    {character ? <div>
                         <img src={character.image} />
                         <h1>Name: {character.name}</h1>
                         <p>Species: {character.species}</p>
                         <p>Status: {character.status}</p>
-                        <p>{character.created}</p>
-                    </div>
-        </section >
+                        <p>Origin: {character.origin.name}</p>
+                        <p>Location: {character.location.name}</p>
+                    </div> : <p>Personagem não encontrado</p>}
+                    
+            </section >
+        </SectionCard>
+        
     )
 }
+
+const SectionCard = styled.section`
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+`
