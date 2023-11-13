@@ -3,35 +3,37 @@ import styled from "styled-components";
 import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
 
-async function getDatos() {
-    const response = await fetch("https://rickandmortyapi.com/api/character")
-    const datos = await response.json()
-    return datos.results
-}
 
-export const Main = () => {
-
+const Main = () => {
     const { theme } = useContext(ThemeContext)
 
-    const [ characters, setCharacters ] = useState([])
+    const [characters, setCharacters] = useState([])
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const data = await getDatos()
+    async function getData() {
+        const response = await fetch("https://rickandmortyapi.com/api/character")
+        const data = await response.json()
+        return data.results
+    }
 
+    const fetchData = async () => {
+        const data = await getData()
+        if (data) {
             setCharacters(data)
         }
-        fetchData()
-    },[])
+    }
 
-    return(
-        <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
+    useEffect(() => {
+        fetchData()
+    }, [])
+
+    return (
+        <SectionMain style={{ color: theme.color, backgroundColor: theme.backgroundColor }}>
             <ul>
                 {
                     characters.map((item, index) => {
-                        return(
+                        return (
                             <li key={index}>
-                                <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to={`/card/${item.id}`}>
+                                <Link style={{ color: theme.color, backgroundColor: theme.backgroundColor }} to={`/card/${item.id}`}>
                                     <div>
                                         <img src={item.image} />
                                         <h2>{item.name}</h2>
@@ -52,3 +54,5 @@ const SectionMain = styled.section`
     padding-top: 30px;
     margin: auto;
 `
+
+export default Main;
