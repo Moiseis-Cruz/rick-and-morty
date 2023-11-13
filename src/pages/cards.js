@@ -1,10 +1,8 @@
-import { Header } from "../components/header"
-import { Main } from "../components/main/main"
+import { Main } from "../components/main"
 
 export const CardsList = () => {
     return(
         <>
-            <Header />
             <Main />
         </>
     )
