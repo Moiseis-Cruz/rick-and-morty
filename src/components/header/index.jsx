@@ -14,7 +14,6 @@ export const Header = () => {
             <Logo src={ImgLogo} />
 
             <Button>
-                Mudar Tema
                 {theme.name === "light" ? < FaSun /> : <FaMoon />}
             </Button>
         </HeaderRAM>
