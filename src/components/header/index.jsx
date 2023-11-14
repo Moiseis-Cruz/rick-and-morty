@@ -3,6 +3,7 @@ import ImgLogo from "../imgs/rick-and-morty.png"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts"
 import { HeaderRAM, Logo } from "./styles"
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export const Header = () => {
 
@@ -14,6 +15,7 @@ export const Header = () => {
 
             <Button>
                 Mudar Tema
+                {theme.name === "light" ? < FaSun /> : <FaMoon />}
             </Button>
         </HeaderRAM>
     )
