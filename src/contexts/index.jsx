@@ -2,11 +2,13 @@ import { createContext, useState } from "react";
 
 export const themes = {
     light: {
+        name: "light",
         color: "#000000",
         backgroundColor: "#eeeeee",
         border: "1px solid #000000"
     },
     dark: {
+        name: "dark",
         color: "#ffffff",
         backgroundColor: "#000000",
         border: "1px solid #ffffff"
