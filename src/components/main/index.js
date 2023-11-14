@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import styled from "styled-components";
 import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
+import { SectionMain } from "./styles";
 
 async function getDatos() {
     const response = await fetch("https://rickandmortyapi.com/api/character")
@@ -45,10 +45,3 @@ export const Main = () => {
         </SectionMain>
     )
 }
-
-const SectionMain = styled.section`
-    width: 100%;
-    max-width: 1440px;
-    padding-top: 30px;
-    margin: auto;
-`

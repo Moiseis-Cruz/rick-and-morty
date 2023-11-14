@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
-import styled from "styled-components";
+import { SectionCard } from "./styles";
 
 async function getDatos(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -16,7 +16,7 @@ export const Character = () => {
     const { theme } = useContext(ThemeContext)
 
     const [ character, setCharacter ] = useState()
-    // console.log(character);
+    console.log(character);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -45,9 +45,3 @@ export const Character = () => {
         
     )
 }
-
-const SectionCard = styled.section`
-    width: 100%;
-    max-width: 1440px;
-    margin: auto;
-`
