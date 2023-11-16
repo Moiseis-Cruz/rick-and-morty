@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
-import { SectionMain } from "./styles";
+import { SectionMain, ListCharacters, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import styled from "styled-components";
 
@@ -67,25 +67,3 @@ export const Main = () => {
         </SectionMain>
     )
 }
-
-const ListCharacters = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-`
-
-const ContainerBtns = styled.div`
-    display: flex;
-    flex-direction: row;
-`
-
-const BtnPage = styled.button`
-    width: 180px;
-    height: 40px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`
