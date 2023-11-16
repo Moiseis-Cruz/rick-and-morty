@@ -44,7 +44,7 @@ export const Main = () => {
 
     return(
         <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
-            <ul>
+            <ListCharacters>
                 {
                     characters.map((item, index) => {
                         return(
@@ -59,7 +59,7 @@ export const Main = () => {
                         )
                     })
                 }
-            </ul>
+            </ListCharacters>
             <ContainerBtns>
                 <BtnPage onClick={previousPage} disabled={switchPages === 1}><GrCaretPrevious /> Previous Page</BtnPage>
                 <BtnPage onClick={switchBetweenPages}>Next Page <GrCaretNext /> </BtnPage>
@@ -67,6 +67,14 @@ export const Main = () => {
         </SectionMain>
     )
 }
+
+const ListCharacters = styled.ul`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+`
 
 const ContainerBtns = styled.div`
     display: flex;
