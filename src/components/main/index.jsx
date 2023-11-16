@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
-import { SectionMain, ListCharacters, ContainerBtns, BtnPage } from "./styles";
+import { SectionMain, ListCharacters, Card, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 async function getDatos(page) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
@@ -50,10 +50,10 @@ export const Main = () => {
                         return(
                             <li key={index}>
                                 <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to={`/card/${item.id}`}>
-                                    <div>
+                                    <Card style={{border: theme.border}}>
                                         <img src={item.image} />
                                         <h2>{item.name}</h2>
-                                    </div>
+                                    </Card>
                                 </Link>
                             </li>
                         )
