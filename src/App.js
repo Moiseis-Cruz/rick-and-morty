@@ -28,6 +28,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Exo', sans-serif;
   }
 
+  img {
+    width: 100%;
+  }
+
   ul {
     list-style: none;
   }
