@@ -16,6 +16,16 @@ export const ListCharacters = styled.ul`
     justify-content: center;
 `
 
+export const Card = styled.div`
+    width: 300px;
+    text-align: center;
+    border: 3px solid black;
+    // background-color: brown;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 8px;
+`
+
 export const ContainerBtns = styled.div`
     display: flex;
     justify-content:center;
