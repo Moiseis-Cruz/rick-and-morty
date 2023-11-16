@@ -3,6 +3,7 @@ import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
 import { SectionMain } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
+import styled from "styled-components";
 
 async function getDatos(page) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
@@ -32,12 +33,12 @@ export const Main = () => {
     },[switchPages])
 
     const switchBetweenPages = () => {
-        setSwitchPages((prevPages => prevPages + 1))
+        setSwitchPages((prevPage => prevPage + 1))
     }
 
     const previousPage = () => {
         if(switchPages > 1){
-            setSwitchPages((prevPages => prevPages - 1))
+            setSwitchPages((prevPage => prevPage - 1))
         }
     }
 
@@ -59,8 +60,24 @@ export const Main = () => {
                     })
                 }
             </ul>
-            <button onClick={previousPage} disabled={switchPages === 1}><GrCaretPrevious /> Previous Page</button>
-            <button onClick={switchBetweenPages}>Next Page <GrCaretNext /> </button>
+            <ContainerBtns>
+                <BtnPage onClick={previousPage} disabled={switchPages === 1}><GrCaretPrevious /> Previous Page</BtnPage>
+                <BtnPage onClick={switchBetweenPages}>Next Page <GrCaretNext /> </BtnPage>
+            </ContainerBtns>
         </SectionMain>
     )
 }
+
+const ContainerBtns = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
+const BtnPage = styled.button`
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
