@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
 import { SectionMain } from "./styles";
+import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 
 async function getDatos(page) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
@@ -58,8 +59,8 @@ export const Main = () => {
                     })
                 }
             </ul>
-            <button onClick={previousPage} disabled={switchPages === 1}>Previous Page</button>
-            <button onClick={switchBetweenPages}>Next Page</button>
+            <button onClick={previousPage} disabled={switchPages === 1}><GrCaretPrevious /> Previous Page</button>
+            <button onClick={switchBetweenPages}>Next Page <GrCaretNext /> </button>
         </SectionMain>
     )
 }
