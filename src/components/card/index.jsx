@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
-import { SectionCard, ContainerCard, CardCharater } from "./styles";
+import { SectionCard, ContainerCard, CardCharater, SectionContainer } from "./styles";
 import { IoHome } from "react-icons/io5";
 
 async function getDatos(id) {
@@ -30,7 +30,7 @@ export const Character = () => {
 
     return(
         <SectionCard>
-            <div style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
+            <SectionContainer style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
                 <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'><IoHome /> Votal a tela inicial</Link>
                 <ContainerCard>
                     {character ? <CardCharater>
@@ -46,7 +46,7 @@ export const Character = () => {
                         </div>
                     </CardCharater> : <p>Personagem não encontrado</p>}
                 </ContainerCard>
-            </div>
+            </SectionContainer>
         </SectionCard>
         
     )
