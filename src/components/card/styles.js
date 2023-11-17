@@ -7,6 +7,11 @@ export const SectionCard = styled.section`
     height: calc(100vh - 120px);
 `
 
+export const SectionContainer = styled.div`
+    height: 100%;
+    text-align: center;
+`
+
 export const ContainerCard = styled.div`
     width: 100%;
     height: 100%;
@@ -21,4 +26,5 @@ export const CardCharater = styled.div`
     display: flex;
     gap: 10px;
     background-color: red;
+    text-align: left;
 `
