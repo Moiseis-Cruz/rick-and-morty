@@ -16,7 +16,7 @@ export const ListCharacters = styled.ul`
     justify-content: center;
 `
 
-export const Card = styled.div`
+export const Cards = styled.div`
     width: 300px;
     text-align: center;
     border: 3px solid black;
@@ -24,6 +24,10 @@ export const Card = styled.div`
     border-radius: 8px;
     overflow: hidden;
     padding: 8px;
+`
+
+export const TitleCards = styled.h2`
+    font-weight: 900;
 `
 
 export const ContainerBtns = styled.div`
