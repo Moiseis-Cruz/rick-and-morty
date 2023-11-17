@@ -9,7 +9,11 @@ export const SectionCard = styled.section`
 
 export const SectionContainer = styled.div`
     height: 100%;
+`
+
+export const ContainerLink = styled.div`
     text-align: center;
+    padding-top: 20px;
 `
 
 export const ContainerCard = styled.div`
@@ -25,6 +29,5 @@ export const CardCharater = styled.div`
     width: 600px;
     display: flex;
     gap: 10px;
-    background-color: red;
-    text-align: left;
+    background-color: darkgrey;
 `
