@@ -3,7 +3,6 @@ import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
 import { SectionMain, ListCharacters, Cards, TitleCards, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
-import styled from "styled-components";
 
 async function getDatos(page) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)

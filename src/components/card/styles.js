@@ -23,6 +23,7 @@ export const ContainerCard = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 600;
 `
 
 export const CardCharater = styled.div`
