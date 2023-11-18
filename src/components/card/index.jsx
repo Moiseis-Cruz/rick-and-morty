@@ -41,10 +41,20 @@ export const Character = () => {
                         </div>
                         <div>
                             <TitleCard><FontBolder>Name:</FontBolder> {character.name}</TitleCard>
-                            <p><FontBolder>Species:</FontBolder> {character.species}</p>
-                            <p><FontBolder>Status:</FontBolder> {character.status}</p>
-                            <p><FontBolder>Origin: </FontBolder>{character.origin.name}</p>
-                            <p><FontBolder>Location:</FontBolder> {character.location.name}</p>
+                            <ul>
+                                <li>
+                                    <p><FontBolder>Species:</FontBolder> {character.species}</p>
+                                </li>
+                                <li>
+                                    <p><FontBolder>Status:</FontBolder> {character.status}</p>
+                                </li>
+                                <li>
+                                    <p><FontBolder>Origin: </FontBolder>{character.origin.name}</p>
+                                </li>
+                                <li>
+                                    <p><FontBolder>Location:</FontBolder> {character.location.name}</p>
+                                </li>
+                            </ul>
                         </div>
                     </CardCharater> : <p>Personagem não encontrado</p>}
                 </ContainerCard>
