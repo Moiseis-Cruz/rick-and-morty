@@ -5,7 +5,6 @@ export const SectionMain = styled.section`
     max-width: 1440px;
     padding: 30px 0;
     margin: auto;
-    background-color: purple;
 `
 
 export const ListCharacters = styled.ul`
@@ -20,7 +19,6 @@ export const Cards = styled.div`
     width: 300px;
     text-align: center;
     border: 3px solid black;
-    // background-color: brown;
     border-radius: 8px;
     overflow: hidden;
     padding: 8px;
@@ -34,11 +32,9 @@ export const ContainerBtns = styled.div`
     display: flex;
     justify-content:center;
     gap: 5px;
-    // background-color: red;
     margin: 30px auto 0;
     padding: 30px 0;
     max-width: 400px;
-
 `
 
 export const BtnPage = styled.button`
