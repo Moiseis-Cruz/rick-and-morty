@@ -3,6 +3,7 @@ import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
 import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer } from "./styles";
 import { IoHome } from "react-icons/io5";
+import styled from "styled-components";
 
 async function getDatos(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -40,11 +41,11 @@ export const Character = () => {
                             <img src={character.image} />
                         </div>
                         <div>
-                            <h1>Name: {character.name}</h1>
-                            <p>Species: {character.species}</p>
-                            <p>Status: {character.status}</p>
-                            <p>Origin: {character.origin.name}</p>
-                            <p>Location: {character.location.name}</p>
+                            <TitleCard><FontBolder>Name:</FontBolder> {character.name}</TitleCard>
+                            <p><FontBolder>Species:</FontBolder> {character.species}</p>
+                            <p><FontBolder>Status:</FontBolder> {character.status}</p>
+                            <p><FontBolder>Origin: </FontBolder>{character.origin.name}</p>
+                            <p><FontBolder>Location:</FontBolder> {character.location.name}</p>
                         </div>
                     </CardCharater> : <p>Personagem não encontrado</p>}
                 </ContainerCard>
@@ -53,3 +54,11 @@ export const Character = () => {
         
     )
 }
+
+const TitleCard = styled.h1`
+    font-weight: 600;
+`
+
+const FontBolder = styled.span`
+    font-weight: 900;
+`
