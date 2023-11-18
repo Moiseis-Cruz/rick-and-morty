@@ -32,3 +32,12 @@ export const CardCharater = styled.div`
     gap: 10px;
     background-color: darkgrey;
 `
+
+export const TitleCard = styled.h1`
+    font-weight: 600;
+    margin-top: 15px;
+`
+
+export const FontBolder = styled.span`
+    font-weight: 900;
+`

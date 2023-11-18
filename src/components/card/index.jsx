@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
-import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer } from "./styles";
+import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder } from "./styles";
 import { IoHome } from "react-icons/io5";
-import styled from "styled-components";
 
 async function getDatos(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -54,11 +53,3 @@ export const Character = () => {
         
     )
 }
-
-const TitleCard = styled.h1`
-    font-weight: 600;
-`
-
-const FontBolder = styled.span`
-    font-weight: 900;
-`
