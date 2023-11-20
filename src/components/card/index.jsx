@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
-import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder } from "./styles";
+import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 
 async function getDatos(id) {
@@ -41,7 +41,7 @@ export const Character = () => {
                         </div>
                         <div>
                             <TitleCard><FontBolder>Name:</FontBolder> {character.name}</TitleCard>
-                            <ul>
+                            <DescriptionList>
                                 <li>
                                     <p><FontBolder>Species:</FontBolder> {character.species}</p>
                                 </li>
@@ -54,7 +54,7 @@ export const Character = () => {
                                 <li>
                                     <p><FontBolder>Location:</FontBolder> {character.location.name}</p>
                                 </li>
-                            </ul>
+                            </DescriptionList>
                         </div>
                     </CardCharater> : <p>Personagem não encontrado</p>}
                 </ContainerCard>
