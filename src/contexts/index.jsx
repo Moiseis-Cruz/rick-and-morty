@@ -5,7 +5,7 @@ export const themes = {
         name: "light",
         color: "#000000",
         backgroundColor: "#eeeeee",
-        border: "1px solid #000000"
+        border: "1px solid #000000",
     },
     dark: {
         name: "dark",
