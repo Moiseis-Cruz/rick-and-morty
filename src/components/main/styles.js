@@ -22,6 +22,7 @@ export const Cards = styled.div`
     border-radius: 8px;
     overflow: hidden;
     padding: 8px;
+    background-color: rgb(157,185,209);
 `
 
 export const TitleCards = styled.h2`
