@@ -28,16 +28,27 @@ export const ContainerCard = styled.div`
 
 export const CardCharater = styled.div`
     width: 600px;
+    height: 300px;
     display: flex;
     gap: 10px;
-    background-color: darkgrey;
+    background-color: rgb(14,42,76);
+    background-color: rgb(157,185,209);
+    border: 3px solid black;
 `
 
 export const TitleCard = styled.h1`
     font-weight: 600;
     margin-top: 15px;
+    min-height: 64px;
 `
 
 export const FontBolder = styled.span`
     font-weight: 900;
+`
+
+export const DescriptionList = styled.ul`
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
 `
