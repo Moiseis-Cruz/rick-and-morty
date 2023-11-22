@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams, Link } from "react-router-dom";
-import { SectionCard, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
+import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 
 async function getDatos(id) {
@@ -32,7 +32,7 @@ export const Character = () => {
         <SectionCard>
             <SectionContainer style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
                 <ContainerLink>
-                    <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'><IoHome /> Voltar a tela inicial</Link>
+                    <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'><BtnBack> <IoHome /> Voltar a tela inicial</BtnBack></Link>
                 </ContainerLink>
                 <ContainerCard>
                     {character ? <CardCharater>
