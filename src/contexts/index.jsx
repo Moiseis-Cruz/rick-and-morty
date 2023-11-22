@@ -1,7 +1,7 @@
 import { createContext, useState } from "react";
 
-import bgLight from '../components/imgs/RAM-0.jpg'
-import bgDack from '../components/imgs/RAM-8.png'
+import bgLight from '../components/imgs/RAM-light.jpg'
+import bgDack from '../components/imgs/RAM-dark.png'
 
 export const themes = {
     light: {
