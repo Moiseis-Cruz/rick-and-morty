@@ -42,7 +42,7 @@ export const Main = () => {
     }
 
     return(
-        <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
+        <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
             <ListCharacters>
                 {
                     characters.map((item, index) => {
