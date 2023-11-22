@@ -7,6 +7,15 @@ export const SectionCard = styled.section`
     height: calc(100vh - 120px);
 `
 
+export const BtnBack = styled.p`
+    background-color: pink;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    border-radius: 25px;
+`
+
 export const SectionContainer = styled.div`
     height: 100%;
 `
