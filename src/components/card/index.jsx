@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 
