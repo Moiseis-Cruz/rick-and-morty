@@ -10,7 +10,6 @@ export const SectionCard = styled.section`
 
 export const BtnBack = styled(Link)`
     display: inline-block;
-    background-color: pink;
     width: 240px;
     height: 40px;
     line-height: 40px;
