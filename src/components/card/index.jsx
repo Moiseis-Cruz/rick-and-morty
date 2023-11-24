@@ -32,7 +32,7 @@ export const Character = () => {
         <SectionCard>
             <SectionContainer style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
                 <ContainerLink>
-                    <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'><BtnBack> <IoHome /> Voltar a tela inicial</BtnBack></Link>
+                    <BtnBack style={{color: theme.color, backgroundColor: theme.backgroundColor}} to='/'> <IoHome /> Voltar a tela inicial</BtnBack>
                 </ContainerLink>
                 <ContainerCard>
                     {character ? <CardCharater>
