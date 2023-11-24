@@ -60,8 +60,8 @@ export const Main = () => {
                 }
             </ListCharacters>
             <ContainerBtns>
-                <BtnPage onClick={previousPage} disabled={switchPages === 1}><GrCaretPrevious /> Previous Page</BtnPage>
-                <BtnPage onClick={switchBetweenPages}>Next Page <GrCaretNext /> </BtnPage>
+                <BtnPage onClick={previousPage} disabled={switchPages === 1} style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} ><GrCaretPrevious /> Previous Page</BtnPage>
+                <BtnPage style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} onClick={switchBetweenPages}>Next Page <GrCaretNext /> </BtnPage>
             </ContainerBtns>
         </SectionMain>
     )
