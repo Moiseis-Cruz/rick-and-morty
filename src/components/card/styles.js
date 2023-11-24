@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionCard = styled.section`
@@ -7,12 +8,13 @@ export const SectionCard = styled.section`
     height: calc(100vh - 120px);
 `
 
-export const BtnBack = styled.p`
+export const BtnBack = styled(Link)`
+    display: inline-block;
     background-color: pink;
-    width: 180px;
+    width: 240px;
     height: 40px;
     line-height: 40px;
-    margin: auto;
+    font-weight: 600;
     border-radius: 25px;
 `
 
