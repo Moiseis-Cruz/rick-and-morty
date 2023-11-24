@@ -5,6 +5,9 @@ export const SectionMain = styled.section`
     max-width: 1440px;
     padding: 30px 0;
     margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 `
 
 export const ListCharacters = styled.ul`
@@ -24,7 +27,7 @@ export const Cards = styled.div`
     padding: 8px;
     background-color: rgb(157,185,209);
     &:hover{
-        // transform: scale(1.2);
+        transform: scale(1.1);
         box-shadow: 0 0 20px 20px black;
     }
 `
@@ -49,4 +52,9 @@ export const BtnPage = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    &:active{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 10px black;
+    }
 `
