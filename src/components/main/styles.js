@@ -58,7 +58,7 @@ export const BtnPage = styled.button`
         box-shadow: 0 0 10px 10px black;
     }
     &:disabled{
-        background-color: #ccc;
+        opacity: 0.4;
         cursor: not-allowed;
         transform: scale(1);
         box-shadow: none;
