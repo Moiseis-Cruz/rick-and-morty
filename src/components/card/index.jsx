@@ -35,7 +35,7 @@ export const Character = () => {
                     <BtnBack style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} to='/'> <IoHome /> Voltar a tela inicial</BtnBack>
                 </ContainerLink>
                 <ContainerCard>
-                    {character ? <CardCharater>
+                    {character ? <CardCharater style={{border: theme.border}}>
                         <div style={{width: '300px'}}>
                             <img src={character.image} />
                         </div>
