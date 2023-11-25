@@ -53,9 +53,12 @@ export const BtnPage = styled.button`
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    &:first-child{
+        border-radius: 15px 0 0 15px ;
+    }
     &:active{
         transform: scale(1.1);
-        box-shadow: 0 0 10px 10px black;
     }
     &:disabled{
         opacity: 0.4;
