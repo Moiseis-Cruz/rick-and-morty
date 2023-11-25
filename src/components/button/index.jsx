@@ -7,7 +7,7 @@ export const Button = (props) => {
     const { theme, setTheme } = useContext(ThemeContext)
 
     return(
-        <BtnTogglerThemes onClick={()=> {setTheme(theme === themes.light ? themes.dark : themes.light)}} {...props} style={{color: theme.color, backgroundColor: theme.backgroundColor}} />
+        <BtnTogglerThemes onClick={()=> {setTheme(theme === themes.light ? themes.dark : themes.light)}} {...props} style={{color: theme.color}} />
     )
 }
 
