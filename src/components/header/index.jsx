@@ -10,7 +10,7 @@ export const Header = () => {
     const { theme } = useContext(ThemeContext)
 
     return(
-        <HeaderRAM style={{color: theme.color, backgroundColor: theme.backgroundColor}}>
+        <HeaderRAM style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
             <Logo src={ImgLogo} />
 
             <Button>
