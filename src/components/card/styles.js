@@ -15,6 +15,12 @@ export const BtnBack = styled(Link)`
     line-height: 40px;
     font-weight: 600;
     border-radius: 25px;
+    &:hover{
+        transform: scale(1.05);
+    }
+    &:active{
+        transform: scale(1);
+    }
 `
 
 export const SectionContainer = styled.div`
