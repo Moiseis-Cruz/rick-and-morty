@@ -1,4 +1,4 @@
-# Projeto Rick and Morty
+<!-- # Projeto Rick and Morty
 
 Projeto que lista os personagens da série Rick an Morty, utilizando uma `API` 
 
@@ -7,4 +7,4 @@ Projeto que lista os personagens da série Rick an Morty, utilizando uma `API`
     - HTML;
     - CSS;
     - JavaScript;
-    - React;
+    - React; -->
