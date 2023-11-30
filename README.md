@@ -1,7 +1,8 @@
-Rick and Morty Explorer
+# Rick and Morty Explorer
+
 Bem-vindo ao Rick and Morty Explorer, um projeto React desenvolvido para explorar informações sobre os personagens da famosa série de desenho animado "Rick and Morty". Esta aplicação consome a API pública do Rick and Morty para fornecer dados atualizados sobre personagens, episódios e localizações.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas:
 React: A biblioteca JavaScript para construção da interface de usuário.
 Styled-Components: Uma biblioteca para estilizar componentes React com a beleza do CSS-in-JS.
 React Icons: Ícones personalizados e fáceis de usar para React.
@@ -19,17 +20,17 @@ Capturas de Tela
 Personagens
 Visualização dos personagens da série
 
-Episódios
+## Episódios:
 Detalhes sobre os episódios da série
 
-Tecnologias Desativadas
+## Tecnologias Desativadas:
 Neste projeto, optamos por não utilizar algumas tecnologias que, embora possam ser úteis, foram desativadas devido a razões específicas do escopo e requisitos. As tecnologias desativadas incluem [lista de tecnologias desativadas].
 
-Contribuições
+## Contribuições:
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests para melhorar este projeto. Certifique-se de seguir nossas [diretrizes de contribuição].
 
-Licença
-Este projeto é licenciado sob a [Licença MIT] - veja o arquivo LICENSE.md para detalhes.
+<!-- Licença
+Este projeto é licenciado sob a [Licença MIT] - veja o arquivo LICENSE.md para detalhes. -->
 
 <!-- # Projeto Rick and Morty
 
