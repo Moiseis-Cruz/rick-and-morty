@@ -1,4 +1,4 @@
-import { Character } from "../components/card";
+import { Character } from "../components/character";
 
 export const Post = () => {
     return(
