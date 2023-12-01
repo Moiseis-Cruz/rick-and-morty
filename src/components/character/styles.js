@@ -52,6 +52,10 @@ export const CardCharater = styled.div`
     border: 3px solid black;
 `
 
+export const ContainerImg = styled.div`
+    width: 300px;
+`
+
 export const TitleCard = styled.h1`
     font-weight: 600;
     margin-top: 15px;
