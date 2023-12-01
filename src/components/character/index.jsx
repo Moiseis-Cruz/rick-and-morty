@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams } from "react-router-dom";
-import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
+import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, ContainerImg, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 
 async function getDatos(id) {
@@ -36,9 +36,9 @@ export const Character = () => {
                 </ContainerLink>
                 <ContainerCard>
                     {character ? <CardCharater style={{border: theme.border}}>
-                        <div style={{width: '300px'}}>
+                        <ContainerImg>
                             <img src={character.image} />
-                        </div>
+                        </ContainerImg>
                         <div>
                             <TitleCard><FontBolder>Name:</FontBolder> {character.name}</TitleCard>
                             <DescriptionList>
