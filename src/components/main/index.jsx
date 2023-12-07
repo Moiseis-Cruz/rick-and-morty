@@ -3,12 +3,7 @@ import { ThemeContext } from "../../contexts";
 import { Link } from "react-router-dom";
 import { SectionMain, ListCharacters, Cards, TitleCards, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
-
-async function getDatos(page) {
-    const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
-    const datos = await response.json()
-    return datos.results
-}
+import { getDatos } from "../../services";
 
 export const Main = () => {
 
