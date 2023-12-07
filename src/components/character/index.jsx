@@ -3,12 +3,7 @@ import { ThemeContext } from "../../contexts";
 import { useParams } from "react-router-dom";
 import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, ContainerImg, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
-
-async function getDatos(id) {
-    const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
-    const datos = await response.json()
-    return datos
-}
+import { getData } from "../../services";
 
 export const Character = () => {
 
@@ -21,7 +16,7 @@ export const Character = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await getDatos(id)
+            const data = await getData(id)
 
             setCharacter(data)
         }
