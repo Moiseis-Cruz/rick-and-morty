@@ -49,6 +49,7 @@ export const ContainerCard = styled.div`
 `
 
 export const CardCharater = styled.div`
+    border: ${props => props.theme.border};
     width: 600px;
     height: 300px;
     display: flex;
