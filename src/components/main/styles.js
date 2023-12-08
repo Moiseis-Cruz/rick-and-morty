@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const SectionMain = styled.section`
+export const SectionMain = styled.div`
+    color: ${props => props.theme.color};
+    background-color: ${props => props.theme.backgroundColor};
+    background-image: ${props => props.theme.backgroundImage};
     width: 100%;
     max-width: 1440px;
     padding: 30px 0;
@@ -8,7 +11,7 @@ export const SectionMain = styled.section`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-`
+`;
 
 export const ListCharacters = styled.ul`
     display: flex;
@@ -19,6 +22,7 @@ export const ListCharacters = styled.ul`
 `
 
 export const Cards = styled.div`
+    border: ${props => props.theme.border};
     width: 300px;
     text-align: center;
     border: 3px solid black;
@@ -46,6 +50,9 @@ export const ContainerBtns = styled.div`
 `
 
 export const BtnPage = styled.button`
+    color: ${props => props.theme.color};
+    background-color: ${props => props.theme.backgroundColor};
+    border: ${props => props.theme.border};
     width: 180px;
     height: 40px;
     font-size: 20px;
