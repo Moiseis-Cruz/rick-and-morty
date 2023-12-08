@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const HeaderRAM = styled.header`
+    background-color: ${props => props.theme.backgroundColor};
+    background-image: ${props => props.theme.backgroundImage};
     width: 100%;
     max-width: 1440px;
     height: 120px;
