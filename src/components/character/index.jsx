@@ -27,7 +27,7 @@ export const Character = () => {
         <SectionCard>
             <SectionContainer theme={theme}>
                 <ContainerLink>
-                    <BtnBack style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} to='/'> <IoHome /> Voltar a tela inicial</BtnBack>
+                    <BtnBack theme={theme} to='/'> <IoHome /> Voltar a tela inicial</BtnBack>
                 </ContainerLink>
                 <ContainerCard>
                     {character ? <CardCharater style={{border: theme.border}}>
