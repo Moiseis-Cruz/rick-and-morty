@@ -25,6 +25,9 @@ export const BtnBack = styled(Link)`
 
 export const SectionContainer = styled.div`
     height: 100%;
+    background-color: ${props => props.theme.backgroundColor};
+    background-image: ${props => props.theme.backgroundImage};
+    color: ${props => props.theme.color};
 `
 
 export const ContainerLink = styled.div`
