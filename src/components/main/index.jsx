@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { SectionMain, ListCharacters, Cards, TitleCards, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import { getDatos } from "../../services";
+// import styled from 'styled-components';
 
 export const Main = () => {
 
@@ -37,14 +38,14 @@ export const Main = () => {
     }
 
     return(
-        <SectionMain style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
+        <SectionMain theme={theme}>
             <ListCharacters>
                 {
                     characters.map((item, index) => {
                         return(
                             <li key={index}>
                                 <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to={`/card/${item.id}`}>
-                                    <Cards style={{border: theme.border}}>
+                                    <Cards theme={theme}>
                                         <img src={item.image} />
                                         <TitleCards>{item.name}</TitleCards>
                                     </Cards>
@@ -55,8 +56,8 @@ export const Main = () => {
                 }
             </ListCharacters>
             <ContainerBtns>
-                <BtnPage onClick={previousPage} disabled={switchPages === 1} style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} ><GrCaretPrevious /> Previous Page</BtnPage>
-                <BtnPage style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} onClick={switchBetweenPages}>Next Page <GrCaretNext /> </BtnPage>
+                <BtnPage onClick={previousPage} theme={theme} disabled={switchPages === 1} ><GrCaretPrevious /> Previous Page</BtnPage>
+                <BtnPage onClick={switchBetweenPages} theme={theme}>Next Page <GrCaretNext /> </BtnPage>
             </ContainerBtns>
         </SectionMain>
     )
