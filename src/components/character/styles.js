@@ -9,6 +9,9 @@ export const SectionCard = styled.section`
 `
 
 export const BtnBack = styled(Link)`
+    background-color: ${props => props.theme.backgroundColor};
+    color: ${props => props.theme.color};
+    border: ${props => props.theme.border};
     display: inline-block;
     width: 240px;
     height: 40px;
