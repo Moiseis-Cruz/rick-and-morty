@@ -25,7 +25,7 @@ export const Character = () => {
 
     return(
         <SectionCard>
-            <SectionContainer style={{color: theme.color, backgroundColor: theme.backgroundColor, backgroundImage: theme.backgroundImage}}>
+            <SectionContainer theme={theme}>
                 <ContainerLink>
                     <BtnBack style={{color: theme.color, backgroundColor: theme.backgroundColor, border: theme.border}} to='/'> <IoHome /> Voltar a tela inicial</BtnBack>
                 </ContainerLink>
