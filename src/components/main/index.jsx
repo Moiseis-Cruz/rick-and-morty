@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
-import { Link } from "react-router-dom";
-import { SectionMain, ListCharacters, Cards, TitleCards, ContainerBtns, BtnPage } from "./styles";
+import { SectionMain, ListCharacters, LinkCards, Cards, TitleCards, ContainerBtns, BtnPage } from "./styles";
 import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 import { getDatos } from "../../services";
-// import styled from 'styled-components';
 
 export const Main = () => {
 
@@ -44,12 +42,12 @@ export const Main = () => {
                     characters.map((item, index) => {
                         return(
                             <li key={index}>
-                                <Link style={{color: theme.color, backgroundColor: theme.backgroundColor}} to={`/card/${item.id}`}>
+                                <LinkCards theme={theme} to={`/card/${item.id}`}>
                                     <Cards theme={theme}>
                                         <img src={item.image} />
                                         <TitleCards>{item.name}</TitleCards>
                                     </Cards>
-                                </Link>
+                                </LinkCards>
                             </li>
                         )
                     })
