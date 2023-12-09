@@ -47,17 +47,3 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issue
 ## Agradecimentos:
 
 Agradeço a [<b>Luis Henrique</b>](https://github.com/luis-henrique-carvalho) pela valiosa ajuda e suporte durante o desenvolvimento deste projeto. Suas ideias e feedback foram fundamentais para aprimorar a qualidade da aplicação. E, me ajudar aperfeiçoando as minhas habilidades.
-
-<!-- Licença
-Este projeto é licenciado sob a [Licença MIT] - veja o arquivo LICENSE.md para detalhes. -->
-
-<!-- # Projeto Rick and Morty
-
-Projeto que lista os personagens da série Rick an Morty, utilizando uma `API`
-
-## Tecnologias utilizadas:
-
-    - HTML;
-    - CSS;
-    - JavaScript;
-    - React; -->
