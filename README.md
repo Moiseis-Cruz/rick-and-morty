@@ -44,6 +44,10 @@ Neste projeto, optamos por não utilizar algumas tecnologias que, embora possam 
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests para melhorar este projeto. Certifique-se de seguir nossas [diretrizes de contribuição].
 
+## Agradecimentos:
+
+Agradeço a [<b>Luis Henrique</b>](https://github.com/luis-henrique-carvalho) pela valiosa ajuda e suporte durante o desenvolvimento deste projeto. Suas ideias e feedback foram fundamentais para aprimorar a qualidade da aplicação. E, me ajudar aperfeiçoando as minhas habilidades.
+
 <!-- Licença
 Este projeto é licenciado sob a [Licença MIT] - veja o arquivo LICENSE.md para detalhes. -->
 
