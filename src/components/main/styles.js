@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SectionMain = styled.div`
     color: ${props => props.theme.color};
@@ -19,6 +20,10 @@ export const ListCharacters = styled.ul`
     gap: 20px;
     align-items: center;
     justify-content: center;
+`
+
+export const LinkCards = styled(Link)`
+    color: ${props => props.theme.color};
 `
 
 export const Cards = styled.div`
