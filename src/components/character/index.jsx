@@ -12,7 +12,6 @@ export const Character = () => {
     const { theme } = useContext(ThemeContext)
 
     const [ character, setCharacter ] = useState()
-    console.log(character);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -39,6 +38,9 @@ export const Character = () => {
                             <DescriptionList>
                                 <li>
                                     <p><FontBolder>Species:</FontBolder> {character.species}</p>
+                                </li>
+                                <li>
+                                    <p><FontBolder>Gender:</FontBolder> {character.gender}</p>
                                 </li>
                                 <li>
                                     <p><FontBolder>Status:</FontBolder> {character.status}</p>
