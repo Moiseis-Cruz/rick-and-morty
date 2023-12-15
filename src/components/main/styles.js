@@ -5,13 +5,14 @@ export const SectionMain = styled.div`
     color: ${props => props.theme.color};
     background-color: ${props => props.theme.backgroundColor};
     background-image: ${props => props.theme.backgroundImage};
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     max-width: 1440px;
     padding: 30px 0;
     margin: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 `;
 
 export const ListCharacters = styled.ul`
