@@ -5,7 +5,7 @@ export const SectionCard = styled.section`
     /* width: 100%; */
     max-width: 1440px;
     margin: auto;
-    min-height: calc(100vh - 120px);
+    /* min-height: calc(100vh - 120px); */
     /* background-color: gray; */
     /* min-height: 100vh; */
     /* display: flex; */
@@ -30,7 +30,8 @@ export const BtnBack = styled(Link)`
 `
 
 export const SectionContainer = styled.div`
-    height: 100%;
+    /* height: 100%; */
+    min-height: calc(100vh - 120px);
     display: flex;
     padding: 30px 0;
     align-items: center;
