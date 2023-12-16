@@ -63,7 +63,7 @@ export const Character = () => {
 }
 
 const ContentInformation = styled.div`
-    background-color: brown;
+    /* background-color: brown; */
     padding-left: 15px;
     width: 100%;
     @media (min-width: 580px) {
