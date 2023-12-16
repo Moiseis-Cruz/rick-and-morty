@@ -63,11 +63,15 @@ export const CardCharater = styled.div`
     min-width: 300px;
     min-height: 300px;
     display: flex;
-    /* gap: 10px; */
     flex-direction: column;
     /* background-color: rgb(14,42,76); */
     background-color: rgb(157,185,209);
     /* border: 3px solid black; */
+    @media (min-width: 580px) {
+        width: 600px;
+        flex-direction: row;
+        /* gap: 10px; */
+    }
 `
 
 export const ContainerImg = styled.div`
