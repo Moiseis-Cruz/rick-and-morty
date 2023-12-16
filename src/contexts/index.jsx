@@ -9,14 +9,14 @@ export const themes = {
         name: "light",
         color: "#000000",
         backgroundColor: "#eeeeee",
-        border: "1px solid #000000",
+        border: "3px solid #000000",
         backgroundImage: `url(${bgLight})`
     },
     dark: {
         name: "dark",
         color: "#ffffff",
         backgroundColor: "#000000",
-        border: "1px solid #ffffff",
+        border: "3px solid #ffffff",
         backgroundImage: `url(${bgDack})`
     }
 }
