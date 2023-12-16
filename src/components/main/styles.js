@@ -31,7 +31,7 @@ export const Cards = styled.div`
     border: ${props => props.theme.border};
     width: 300px;
     text-align: center;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 8px;
     overflow: hidden;
     padding: 8px;
