@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, ContainerImg, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 import { getData } from "../../services";
+import styled from "styled-components";
 
 export const Character = () => {
 
@@ -33,7 +34,7 @@ export const Character = () => {
                         <ContainerImg>
                             <img src={character.image} />
                         </ContainerImg>
-                        <div>
+                        <ContentInformation>
                             <TitleCard><FontBolder>Name:</FontBolder> {character.name}</TitleCard>
                             <DescriptionList>
                                 <li>
@@ -52,7 +53,7 @@ export const Character = () => {
                                     <p><FontBolder>Location:</FontBolder> {character.location.name}</p>
                                 </li>
                             </DescriptionList>
-                        </div>
+                        </ContentInformation>
                     </CardCharater> : <p>Personagem não encontrado</p>}
                 </ContainerCard>
             </SectionContainer>
@@ -60,3 +61,11 @@ export const Character = () => {
         
     )
 }
+
+const ContentInformation = styled.div`
+    background-color: brown;
+    padding-left: 15px;
+    @media (min-width: 580px) {
+        padding: 0;
+    }
+`
