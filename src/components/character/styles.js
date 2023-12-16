@@ -2,10 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const SectionCard = styled.section`
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin: auto;
     height: calc(100vh - 120px);
+    background-color: gray;
+    /* min-height: 100vh; */
+    /* display: flex; */
 `
 
 export const BtnBack = styled(Link)`
@@ -28,6 +31,11 @@ export const BtnBack = styled(Link)`
 
 export const SectionContainer = styled.div`
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 30px;
     background-color: ${props => props.theme.backgroundColor};
     background-image: ${props => props.theme.backgroundImage};
     color: ${props => props.theme.color};
@@ -39,8 +47,9 @@ export const ContainerLink = styled.div`
 `
 
 export const ContainerCard = styled.div`
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +63,7 @@ export const CardCharater = styled.div`
     height: 300px;
     display: flex;
     gap: 10px;
-    background-color: rgb(14,42,76);
+    /* background-color: rgb(14,42,76); */
     background-color: rgb(157,185,209);
     border: 3px solid black;
 `
