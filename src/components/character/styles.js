@@ -5,8 +5,8 @@ export const SectionCard = styled.section`
     /* width: 100%; */
     max-width: 1440px;
     margin: auto;
-    height: calc(100vh - 120px);
-    background-color: gray;
+    min-height: calc(100vh - 120px);
+    /* background-color: gray; */
     /* min-height: 100vh; */
     /* display: flex; */
 `
@@ -32,6 +32,7 @@ export const BtnBack = styled(Link)`
 export const SectionContainer = styled.div`
     height: 100%;
     display: flex;
+    padding: 30px 0;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
@@ -59,13 +60,14 @@ export const ContainerCard = styled.div`
 
 export const CardCharater = styled.div`
     border: ${props => props.theme.border};
-    width: 600px;
-    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
+    flex-direction: column;
     /* background-color: rgb(14,42,76); */
     background-color: rgb(157,185,209);
-    border: 3px solid black;
+    /* border: 3px solid black; */
 `
 
 export const ContainerImg = styled.div`
