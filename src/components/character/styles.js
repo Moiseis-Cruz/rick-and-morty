@@ -74,6 +74,14 @@ export const TitleCard = styled.h1`
     min-height: 64px;
 `
 
+export const ContentInformation = styled.div`
+    padding-left: 15px;
+    width: 100%;
+    @media (min-width: 580px) {
+        max-width: 300px;
+    }
+`
+
 export const FontBolder = styled.span`
     font-weight: 900;
 `
