@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { useParams } from "react-router-dom";
-import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, ContainerImg, SectionContainer, TitleCard, FontBolder, DescriptionList } from "./styles";
+import { SectionCard, BtnBack, ContainerCard, ContainerLink, CardCharater, ContainerImg, SectionContainer, TitleCard, ContentInformation, FontBolder, DescriptionList } from "./styles";
 import { IoHome } from "react-icons/io5";
 import { getData } from "../../services";
-import styled from "styled-components";
 
 export const Character = () => {
 
@@ -61,11 +60,3 @@ export const Character = () => {
         
     )
 }
-
-const ContentInformation = styled.div`
-    padding-left: 15px;
-    width: 100%;
-    @media (min-width: 580px) {
-        max-width: 300px;
-    }
-`
