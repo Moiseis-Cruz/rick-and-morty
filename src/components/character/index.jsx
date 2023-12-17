@@ -63,11 +63,9 @@ export const Character = () => {
 }
 
 const ContentInformation = styled.div`
-    /* background-color: brown; */
     padding-left: 15px;
     width: 100%;
     @media (min-width: 580px) {
-        /* padding: 0; */
         max-width: 300px;
     }
 `
