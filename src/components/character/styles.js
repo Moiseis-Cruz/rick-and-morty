@@ -52,7 +52,7 @@ export const ContainerCard = styled.div`
 
 export const CardCharater = styled.div`
     border: ${props => props.theme.border};
-    min-width: 300px;
+    width: 300px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@ export const CardCharater = styled.div`
 `
 
 export const ContainerImg = styled.div`
-    width: 300px;
+    max-width: 300px;
 `
 
 export const TitleCard = styled.h1`
