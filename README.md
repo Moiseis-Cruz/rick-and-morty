@@ -2,11 +2,6 @@
 
 Bem-vindo ao Rick and Morty Explorer, um projeto React desenvolvido para explorar informações sobre os personagens da famosa série de desenho animado "Rick and Morty". Esta aplicação consome a API pública do Rick and Morty para fornecer dados atualizados sobre personagens, episódios e localizações.
 
-## Fonte da API:
-
- https://rickandmortyapi.com/
-
-
 ## Tecnologias Utilizadas:
 
 ### React:
@@ -37,7 +32,11 @@ Instale as dependências utilizando `npm install` ou `yarn install`.
 Inicie o aplicativo com o comando `npm start` ou `yarn start`.
 Acesse http://localhost:3000 em seu navegador para explorar o universo do Rick and Morty.
 
-<img src="./public/"/>
+<br><br>
+
+<img src="./public/RAM.gif"/>
+
+<br><br>
 
 ## Contribuições:
 
@@ -46,3 +45,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issue
 ## Agradecimentos:
 
 Agradeço a [<b>Luis Henrique</b>](https://github.com/luis-henrique-carvalho) pela valiosa ajuda e suporte durante o desenvolvimento deste projeto. Suas ideias e feedback foram fundamentais para aprimorar a qualidade da aplicação. E, me ajudar aperfeiçoando as minhas habilidades.
+
+## Fonte da API:
+
+ https://rickandmortyapi.com/
