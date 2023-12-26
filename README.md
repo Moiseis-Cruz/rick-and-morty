@@ -46,6 +46,8 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issue
 
 Agradeço a [<b>Luis Henrique</b>](https://github.com/luis-henrique-carvalho) pela valiosa ajuda e suporte durante o desenvolvimento deste projeto. Suas ideias e feedback foram fundamentais para aprimorar a qualidade da aplicação. E, me ajudar aperfeiçoando as minhas habilidades.
 
+Também quero agradecer a [Gabriel Toledo](https://www.linkedin.com/in/gatoledo1/) pela grande ajuda em melhorar a navegação entre as páginas. Dando maior fulidez a aplicação. Ele me ajudou a tratar muitos erros do projeto.
+
 ## Fonte da API:
 
  https://rickandmortyapi.com/
