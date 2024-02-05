@@ -1,5 +1,5 @@
 import { Button } from "../button"
-import ImgLogo from "../imgs/rick-and-morty.png"
+import ImgLogo from "../../imgs/rick-and-morty.png"
 import { useContext } from "react"
 import { ThemeContext } from "../../contexts"
 import { HeaderRAM, Logo } from "./styles"
