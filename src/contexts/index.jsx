@@ -1,4 +1,4 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 
 import bgLight from '../imgs/RAM-light.jpg'
 import bgDack from '../imgs/RAM-dark.png'
@@ -56,6 +56,10 @@ export const ThemeProvider = (props) => {
     const constextProps = {
         theme, setTheme, characters, fetchData, page: switchPage.current, hasNextPage
     }
+
+    useEffect(() => {
+        localStorage.setItem("themes", JSON.stringify(theme))
+    },[theme])
 
     return(
         <ThemeContext.Provider value={{...constextProps}}>
