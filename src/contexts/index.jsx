@@ -27,7 +27,7 @@ export const ThemeProvider = (props) => {
 
     const savedTheme = localStorage.getItem("themes")
 
-    const [ theme, setTheme ] = useState(themes.light)
+    const [ theme, setTheme ] = useState(savedTheme ? JSON.parse(savedTheme) : themes.light)
 
     const [ characters, serCharacters ] = useState([])
 
