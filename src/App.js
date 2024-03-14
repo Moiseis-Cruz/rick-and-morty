@@ -1,6 +1,6 @@
 import { ThemeProvider } from './contexts';
 import { AppRoutes } from './pages/routes';
-import { GlobalStyles } from './Styles/GlobalStyles'
+import { GlobalStyles } from './Styles/GlobalStyles';
 
 function App() {
   return (
@@ -14,5 +14,3 @@ function App() {
 }
 
 export default App;
-
-
