@@ -26,8 +26,11 @@ export const ThemeContext = createContext({})
 export const ThemeProvider = (props) => {
 
     const [ theme, setTheme ] = useState(themes.light)
+
     const [ characters, serCharacters ] = useState([])
+
     const [ hasNextPage, setHasNextPage ] = useState(true)
+    
     const switchPage = useRef()
 
     const params = new URLSearchParams(window.location.search);
