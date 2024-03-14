@@ -1,4 +1,3 @@
-import './App.css';
 import { createGlobalStyle } from 'styled-components';
 import { ThemeProvider } from './contexts';
 import { AppRoutes } from './pages/routes';
