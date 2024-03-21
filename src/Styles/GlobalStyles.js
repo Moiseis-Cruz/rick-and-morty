@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html {
+        background-color: #000000;
+    }
+
     body {
         font-family: 'Exo', sans-serif;
     }
