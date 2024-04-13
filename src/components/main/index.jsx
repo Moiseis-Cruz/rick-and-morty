@@ -5,11 +5,11 @@ import { GrCaretNext, GrCaretPrevious } from "react-icons/gr";
 
 export const Main = () => {
 
-    const { theme, characters, fetchData, page, hasNextPage } = useContext(ThemeContext)
+    const { theme, characters, fetchData, page, hasNextPage } = useContext(ThemeContext);
 
     useEffect(() => {
         fetchData()
-    },[])
+    },[]);
 
     return(
         <SectionMain theme={theme}>
@@ -40,4 +40,4 @@ export const Main = () => {
             </ContainerBtns>
         </SectionMain>
     )
-}
+};

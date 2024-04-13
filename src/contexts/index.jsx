@@ -1,7 +1,7 @@
 import { createContext, useEffect, useRef, useState } from "react";
 
-import bgLight from '../imgs/RAM-light.jpg'
-import bgDack from '../imgs/RAM-dark.png'
+import bgLight from '../imgs/RAM-light.jpg';
+import bgDack from '../imgs/RAM-dark.png';
 import { getDatos } from "../services";
 
 export const themes = {
@@ -19,21 +19,21 @@ export const themes = {
         border: "3px solid #ffffff",
         backgroundImage: `url(${bgDack})`
     }
-}
+};
 
-export const ThemeContext = createContext({})
+export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
 
-    const savedTheme = sessionStorage.getItem("themes")
+    const savedTheme = sessionStorage.getItem("themes");
 
-    const [ theme, setTheme ] = useState(savedTheme ? JSON.parse(savedTheme) : themes.light)
+    const [ theme, setTheme ] = useState(savedTheme ? JSON.parse(savedTheme) : themes.light);
 
-    const [ characters, serCharacters ] = useState([])
+    const [ characters, serCharacters ] = useState([]);
 
-    const [ hasNextPage, setHasNextPage ] = useState(true)
+    const [ hasNextPage, setHasNextPage ] = useState(true);
 
-    const switchPage = useRef()
+    const switchPage = useRef();
 
     const params = new URLSearchParams(window.location.search);
     const pageNum = params.get("page")
@@ -51,19 +51,19 @@ export const ThemeProvider = (props) => {
         }catch(error){
             console.error("Error fetching data", error);
         }
-    }
+    };
 
     const constextProps = {
         theme, setTheme, characters, fetchData, page: switchPage.current, hasNextPage
-    }
+    };
 
     useEffect(() => {
         sessionStorage.setItem("themes", JSON.stringify(theme))
-    },[theme])
+    },[theme]);
 
     return(
         <ThemeContext.Provider value={{...constextProps}}>
             {props.children}
         </ThemeContext.Provider>
     )
-}
+};
