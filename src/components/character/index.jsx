@@ -7,11 +7,11 @@ import { getData } from "../../services";
 
 export const Character = () => {
 
-    const { id } = useParams()
+    const { id } = useParams();
 
-    const { theme } = useContext(ThemeContext)
+    const { theme } = useContext(ThemeContext);
 
-    const [ character, setCharacter ] = useState()
+    const [ character, setCharacter ] = useState();
 
     useEffect(() => {
         const fetchData = async () => {
@@ -20,7 +20,7 @@ export const Character = () => {
             setCharacter(data)
         }
         fetchData()
-    },[])
+    },[]);
 
     return(
         <SectionCard>
@@ -59,4 +59,4 @@ export const Character = () => {
         </SectionCard>
         
     )
-}
+};

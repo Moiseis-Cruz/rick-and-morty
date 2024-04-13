@@ -4,4 +4,4 @@ export const Post = () => {
     return(
         <Character />
     )
-}
+};

@@ -1,13 +1,13 @@
-import { Button } from "../button"
-import ImgLogo from "../../imgs/rick-and-morty.png"
-import { useContext } from "react"
-import { ThemeContext } from "../../contexts"
-import { HeaderRAM, Logo } from "./styles"
+import { Button } from "../button";
+import ImgLogo from "../../imgs/rick-and-morty.png";
+import { useContext } from "react";
+import { ThemeContext } from "../../contexts";
+import { HeaderRAM, Logo } from "./styles";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export const Header = () => {
 
-    const { theme } = useContext(ThemeContext)
+    const { theme } = useContext(ThemeContext);
 
     return(
         <HeaderRAM theme={theme}>
@@ -18,4 +18,4 @@ export const Header = () => {
             </Button>
         </HeaderRAM>
     )
-}
+};

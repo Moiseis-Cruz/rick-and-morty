@@ -1,4 +1,4 @@
-const controller = new AbortController()
+const controller = new AbortController();
 
 async function getDatos(page) {
     try {
@@ -14,12 +14,12 @@ async function getDatos(page) {
         }
         
     }
-}
+};
 
 async function getData(id) {
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
     const datos = await response.json()
     return datos
-}
+};
 
-export { getDatos, getData }
+export { getDatos, getData };
