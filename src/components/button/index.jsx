@@ -1,6 +1,6 @@
-import { useContext } from "react"
-import { ThemeContext, themes } from "../../contexts"
-import styled from "styled-components"
+import { useContext } from "react";
+import { ThemeContext, themes } from "../../contexts";
+import styled from "styled-components";
 
 export const Button = (props) => {
 
@@ -11,7 +11,7 @@ export const Button = (props) => {
     return(
         <BtnTogglerThemes onClick={handleTheme} {...props} theme={theme} />
     )
-}
+};
 
 const BtnTogglerThemes = styled.a`
     color: ${props => props.theme.color};
