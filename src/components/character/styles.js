@@ -56,7 +56,6 @@ export const CardCharater = styled.div`
     min-height: 300px;
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(14,42,76); */
     background-color: rgb(157,185,209);
     @media (min-width: 580px) {
         width: 600px;
