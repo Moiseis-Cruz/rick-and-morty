@@ -12,7 +12,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Exo', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont,'Exo', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     img {
