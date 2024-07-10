@@ -25,7 +25,7 @@ export const ThemeContext = createContext({});
 
 export const ThemeProvider = (props) => {
 
-    const savedTheme = localStorage.getItem("themes");
+    const savedTheme = sessionStorage.getItem("themes");
 
     const [ theme, setTheme ] = useState(savedTheme ? JSON.parse(savedTheme) : themes.light);
 
