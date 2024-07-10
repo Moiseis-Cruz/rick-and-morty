@@ -3,8 +3,14 @@ const controller = new AbortController();
 async function getDatos(page) {
     try {
         const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
-        const dados = await response.json()
-        return dados
+
+        if(!response.ok){
+            throw new Error(`Error Rick & Morty API returned status code ${response.status}`)
+        }
+
+        const dados = await response.json();
+
+        return dados;
     } catch (error) {
         if(error.response?.status === 404 || error.message === "Network Error") {
             controller.abort();
